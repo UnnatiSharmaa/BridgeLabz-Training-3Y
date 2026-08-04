@@ -1,0 +1,25 @@
+/* Heading ko style karna */
+h1 {
+  color: blue;          /* text ka color */
+  background-color: lightgray; /* background color */
+  font-size: 30px;      /* text size */
+  text-align: center;   /* center align */
+}
+
+/* Paragraph style */
+p {
+  color: green;
+  font-size: 18px;
+  line-height: 1.5;     /* spacing between lines */
+}
+
+/* Button style */
+button {
+  background-color: orange;
+  color: white;
+  padding: 10px 20px;   /* inner spacing */
+  border: none;
+  border-radius: 5px;   /* rounded corners */
+  cursor: pointer;      /* hand pointer on hover 
+}
+
