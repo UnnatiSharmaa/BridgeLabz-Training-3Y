@@ -1,0 +1,25 @@
+.blog {
+  display:grid;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+  grid-template-columns:200px 1fr;
+  gap:20px;
+}
+header { grid-area:header; background:#eee; }
+aside { grid-area:sidebar; background:#ddd; }
+main { grid-area:main; display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+footer { grid-area:footer; background:#ccc; text-align:center; }
+
+@media(max-width:800px){
+  .blog {
+    grid-template-areas:
+      "header"
+      "main"
+      "sidebar"
+      "footer";
+    grid-template-columns:1fr;
+  }
+  main { grid-template-columns:1fr; }
+}

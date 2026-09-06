@@ -1,4 +1,25 @@
-/* portfolio.css */
-header, main, footer { display: flex; justify-content: space-between; align-items: center; }
-main { flex-direction: row; }
-@media(max-width:700px){ main, header { flex-direction: column; text-align:center; } }
+* { margin:0; padding:0; box-sizing:border-box; }
+header, main, footer { padding:20px; }
+
+header {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:#eee;
+}
+nav a { margin:0 10px; text-decoration:none; }
+
+main {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:60vh;
+}
+.about, .image { flex:1; text-align:center; }
+
+footer { text-align:center; background:#ddd; }
+
+@media(max-width:700px){
+  main { flex-direction:column; }
+  header { flex-direction:column; }
+}

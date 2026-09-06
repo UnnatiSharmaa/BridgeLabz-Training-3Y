@@ -1,0 +1,19 @@
+.gallery {
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
+}
+.card {
+  background:#f2f2f2;
+  padding:20px;
+  text-align:center;
+  transition:0.3s;
+}
+.card:hover { transform:scale(1.05); }
+
+@media(max-width:900px){
+  .gallery { grid-template-columns:repeat(2,1fr); }
+}
+@media(max-width:600px){
+  .gallery { grid-template-columns:1fr; }
+}
